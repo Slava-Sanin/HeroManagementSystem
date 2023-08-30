@@ -1,0 +1,6 @@
+### Show all heroes (web) ###
+GET http://localhost:8000/heroes
+
+
+### Show all heroes (api) ###
+GET http://localhost:8000/api/heroes

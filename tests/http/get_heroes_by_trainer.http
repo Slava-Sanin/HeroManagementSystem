@@ -1,0 +1,6 @@
+### Get heroes by trainer Id (web) ###
+GET http://localhost:8000/trainers/2/heroes
+
+
+### Get heroes by trainer Id (api) ###
+GET http://localhost:8000/api/trainers/2/heroes

@@ -1,0 +1,2 @@
+### Show trainer's details (api) ###
+GET http://localhost:8000/api/trainers/2

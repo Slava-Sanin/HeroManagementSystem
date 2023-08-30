@@ -1,0 +1,5 @@
+### Show heroe's details (web) ###
+GET http://localhost:8000/heroes/11
+
+### Show heroe's details (api) ###
+GET http://localhost:8000/api/heroes/11

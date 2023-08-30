@@ -1,0 +1,17 @@
+### Update trainer details (web) ###
+GET http://localhost:8000/trainers/update/5
+Content-Type: application/json
+
+{
+    "email": "alen@example.com",
+    "full_name": "Alen Delon"
+}
+
+### Update trainer details (api) ###
+PUT http://localhost:8000/api/trainers/update/6
+Content-Type: application/json
+
+{
+    "email": "alex@example.com",
+    "full_name": "Alex Smith"
+}

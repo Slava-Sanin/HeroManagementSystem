@@ -1,3 +1,18 @@
+### Create Hero (web) ###
+POST http://localhost:8000/heroes/create
+Content-Type: application/json
+
+{
+    "name": "SuperHero5",
+    "ability": "defender",
+    "starting_power": 100,
+    "current_power": 100,
+    "training_count": 0,
+    "started_training_date": "2023-08-24 12:00:00",
+    "last_training_date": "2023-08-24 12:00:00",
+    "suit_colors": "red"
+}
+
 ### Create Hero (api) ###
 POST http://localhost:8000/api/heroes/create
 Content-Type: application/json
@@ -5,7 +20,6 @@ Content-Type: application/json
 {
     "name": "SuperHero5",
     "ability": "defender",
-    "trainer_id": null,
     "starting_power": 100,
     "current_power": 100,
     "training_count": 0,

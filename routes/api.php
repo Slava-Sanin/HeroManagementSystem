@@ -44,16 +44,15 @@ Route::post('login', [AuthController::class, 'login']);
         Route::put('/update/{trainer}', [TrainerController::class, 'update']);
     });
 //});*/
-
+// Hero routes
 Route::get('/heroes', [HeroController::class, 'show']);
-
 Route::post('/heroes/create', [HeroController::class, 'create']);
 Route::get('/heroes/{hero}', [HeroController::class, 'index']);
-//Route::get('/heroes/update/{hero}', [HeroController::class, 'update']);
+//Route::put('/heroes/update/{hero}', [HeroController::class, 'update']);
 
+// Trainer routes
 Route::get('/trainers/{trainer}', [TrainerController::class, 'index']);
-//Route::get('/trainer/edit', 'TrainerController@edit');
-Route::get('/trainer/{trainerId}/assign/{heroId}', [TrainerController::class, 'assignHero']);
-Route::get('/trainer/{trainerId}/unassign/{heroId}', [TrainerController::class, 'unassignHero']);
-Route::get('/trainers/update/{trainer}', [TrainerController::class, 'update']);
+Route::post('/trainer/{trainerId}/assign/{heroId}', [TrainerController::class, 'assignHero']);
+Route::post('/trainer/{trainerId}/unassign/{heroId}', [TrainerController::class, 'unassignHero']);
+Route::put('/trainers/update/{trainer}', [TrainerController::class, 'update']);
 Route::get('/trainers/{trainer}/heroes', [TrainerController::class, 'getTrainerHeroes']);

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HeroController;
 use App\Http\Controllers\TrainerController;
@@ -14,19 +15,20 @@ use App\Http\Controllers\TrainerController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('register', [AuthController::class, 'register']);
+Route::get('login', [AuthController::class, 'login']);
 
 Route::get('/', function () {
     return view('welcome');
 });
-
+// Hero routes
 Route::get('/heroes', [HeroController::class, 'show']);
-
 Route::get('/heroes/create', [HeroController::class, 'create']);
 Route::get('/heroes/{hero}', [HeroController::class, 'index']);
 //Route::get('/heroes/update/{hero}', [HeroController::class, 'update']);
 
+// Trainer routes
 Route::get('/trainers/{trainer}', [TrainerController::class, 'index']);
-//Route::get('/trainer/edit', 'TrainerController@edit');
 Route::get('/trainer/{trainer}/assign/{hero}', [TrainerController::class, 'assignHero']);
 Route::get('/trainer/{trainer}/unassign/{hero}', [TrainerController::class, 'unassignHero']);
 Route::get('/trainers/update/{trainer}', [TrainerController::class, 'update']);

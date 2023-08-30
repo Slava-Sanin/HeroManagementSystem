@@ -1,2 +1,5 @@
+### Show trainer's details (web) ###
+GET http://localhost:8000/trainers/2
+
 ### Show trainer's details (api) ###
 GET http://localhost:8000/api/trainers/2

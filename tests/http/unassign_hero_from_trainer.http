@@ -1,3 +1,6 @@
 ### Unassign hero from trainer (web) ###
-GET http://localhost:8000/trainer/2/unassign/11
+GET http://localhost:8000/trainer/2/unassign/21
+
+### Unassign hero from trainer (api) ###
+POST http://localhost:8000/api/trainer/3/unassign/21
 

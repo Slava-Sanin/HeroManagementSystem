@@ -1,9 +1,19 @@
-### Register Trainer (POST) ###
+### Register Trainer (web) ###
+GET http://localhost:8000/register
+Content-Type: application/json
+
+{
+    "email": "ran@example.com",
+    "password": "newpassword",
+    "full_name": "Ran Tran"
+}
+
+### Register Trainer (api) ###
 POST http://localhost:8000/api/register
 Content-Type: application/json
 
 {
-    "email": "trainer2@example.com",
+    "email": "ran@example.com",
     "password": "newpassword",
-    "full_name": "New Trainer 2"
+    "full_name": "Ran Tran"
 }

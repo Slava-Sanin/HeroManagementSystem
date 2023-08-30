@@ -1,3 +1,6 @@
 ### Assign hero to trainer (web) ###
-GET http://localhost:8000/trainer/3/assign/11
+GET http://localhost:8000/trainer/3/assign/22
+
+### Assign hero to trainer (api) ###
+POST http://localhost:8000/api/trainer/3/assign/22
 

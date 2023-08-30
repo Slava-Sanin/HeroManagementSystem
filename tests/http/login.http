@@ -1,4 +1,13 @@
-### Login (POST) ###
+### Login (web) ###
+GET http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "email": "slava@example.com",
+    "password": "password123"
+}
+
+### Login (api) ###
 POST http://localhost:8000/api/login
 Content-Type: application/json
 

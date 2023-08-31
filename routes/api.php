@@ -20,9 +20,7 @@ use App\Http\Controllers\TrainerController;
     return $request->user();
 });*/
 
-//Route::post('register', 'AuthController@register');
 Route::post('register', [AuthController::class, 'register']);
-//Route::post('login', 'AuthController@login');
 Route::post('login', [AuthController::class, 'login']);
 /*
 //Route::middleware('auth:jwt')->group(function () {

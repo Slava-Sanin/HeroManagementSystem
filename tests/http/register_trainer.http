@@ -3,9 +3,9 @@ GET http://localhost:8000/register
 Content-Type: application/json
 
 {
-    "email": "ran@example.com",
+    "email": "test@example.com",
     "password": "newpassword",
-    "full_name": "Ran Tran"
+    "full_name": "Ran Test"
 }
 
 ### Register Trainer (api) ###
@@ -13,7 +13,7 @@ POST http://localhost:8000/api/register
 Content-Type: application/json
 
 {
-    "email": "ran@example.com",
+    "email": "test@example.com",
     "password": "newpassword",
-    "full_name": "Ran Tran"
+    "full_name": "Test Test"
 }

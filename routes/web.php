@@ -15,8 +15,8 @@ use App\Http\Controllers\TrainerController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('register', [AuthController::class, 'register']);
-Route::get('login', [AuthController::class, 'login']);
+//Route::get('register', [AuthController::class, 'register']);
+//Route::get('login', [AuthController::class, 'login']);
 
 Route::get('/', function () {
     return view('welcome');
